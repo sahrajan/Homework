@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"<Unnamed>","c":"Cube","l":"Cube(double)","url":"%3Cinit%3E(double)"},{"p":"<Unnamed>","c":"Cube","l":"surfaceArea(double)"},{"p":"<Unnamed>","c":"Cube","l":"volume(double)"}]
