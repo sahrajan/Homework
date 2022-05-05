@@ -24,14 +24,16 @@ public class CubeDriver {
 		// TODO Auto-generated method stub
 		Cube result = new Cube(0);
 		
-		Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in); // creating the scanner
 		System.out.print("Enter the Length: ");
 		 
 		double side = sc.nextDouble();
 		
+		//getting the result of surface area
 		double surfaceArea = result.surfaceArea(side);
 		System.out.println(surfaceArea);
 		
+		//getting the result of volume 
 		double volume = result.volume(side);
 		System.out.println(volume);
 		

@@ -44,25 +44,25 @@ public class ChangeCalculator {
 		 int twenty = (int) (totalCents/2000); // assuming twenty bill is the highest bill then calculating how many 
 		 int dollars20 = totalCents%2000;
 		 
-		 int ten = dollars20/1000;
+		 int ten = dollars20/1000;	// calculating the tens bill
 		 int dollars10 = totalCents%1000;
 		 
-		 int five = dollars10/500;
+		 int five = dollars10/500;	// calculating the fives bill
 		 int dollars5 = totalCents%500;
 		 
-		 int one = dollars5/100;
+		 int one = dollars5/100;	// calculating the ones bill
 		 int dollars1 = totalCents%100;
 		 
-		 int quarter = (int) (dollars1/25);
+		 int quarter = (int) (dollars1/25);	// calculating the quarters bill
 		 int quarter25 = (int) (totalCents%25);
 		 
-		 int dime = (int) (quarter25/10);
+		 int dime = (int) (quarter25/10);	// calculating the dime bill
 		 int dime10 = (int) (totalCents%10);
 		 
-		 int nickel = (int) (dime10/5);
+		 int nickel = (int) (dime10/5);	// calculating the nickel bill
 		 int nickel5 = (int) (totalCents%5);
 		 
-		 int penny = (int) (nickel5);
+		 int penny = (int) (nickel5); //rest of the change that is penny
 		
 		 
 	// Printing the result
@@ -77,7 +77,7 @@ public class ChangeCalculator {
 	     System.out.println(penny + " pennies");
 	     
 	 
-	   sc.close();   
+	   sc.close();   // closing the scanner
 	} //  end of main method
 
 } // end of class
