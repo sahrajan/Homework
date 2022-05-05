@@ -1,5 +1,5 @@
 /**
- * 
+ * This class implements the Album that can be driven around 
  * @author Rajan Sah
  * @version 2.0
  * @Date 05/05/2022
@@ -15,10 +15,16 @@ public class Album {
 	public static int numAlbums;
 	
 	/**
-	 * 
-	 * @param title
-	 * @param favoriteTrack
-	 * @param trackNumber
+	 * Creating the private instance variable for this class called title, artist, genre.
+	 * Adding the favoriteTrack in the this class.
+	 * Making the value of trackNumber to integer.
+	 * Setting the public static numAlbums.
+	 * @param title - This is the title
+	 * @param favoriteTrack - favorite track of that album
+	 * @param trackNumber - This is the trackNumber
+	 * @param artist - Artist of the song 
+	 * @param genre - Genre of the song
+	 * Incrementing the numAlbums to keep track of the number of albums created
 	 */
 	public Album(String title, Song favoriteTrack, int trackNumber) {
 		// TODO Auto-generated constructor stub
@@ -29,24 +35,24 @@ public class Album {
 		this.artist = favoriteTrack.getArtist();
 		this.genre = favoriteTrack.getGenre();
 		numAlbums++;
-		return;
+		
 		
 	}
 	
 	/**
 	 * 
-	 * @param title
-	 * @param favoriteTrack
+	 * @param title this is the title.
+	 * @param favoriteTrack passing the trackNumber as 1
 	 */
 	
 	public Album(String title, Song favoriteTrack) {
 		trackNumber = 1;
-		return;
+		
 	}
 
 	/**
 	 * 
-	 * @return
+	 * @return - This will return the title 
 	 */
 	public String getTitle() {
 		return title;
@@ -54,7 +60,7 @@ public class Album {
 	
 	/**
 	 * 
-	 * @return
+	 * @return - This will return the Genre 
 	 */
 	public String getGenre() {
 		return genre;
@@ -62,7 +68,7 @@ public class Album {
 
 	/**
 	 * 
-	 * @return
+	 * @return This will return the FavoriteTrack
 	 */
 	public Song getFavoriteTrack() {
 		return favoriteTrack;
@@ -70,7 +76,7 @@ public class Album {
 
 	/**
 	 * 
-	 * @return
+	 * @return This will return the tracknumber
 	 */
 	public int getTrackNumber() {
 		return trackNumber;
@@ -78,7 +84,7 @@ public class Album {
 
 	/**
 	 * 
-	 * @param favoriteTrack
+	 * @param favoriteTrack - setting the favoriteTrack
 	 */
 	public void setFavoriteTrack(Song favoriteTrack) {
 		this.favoriteTrack = favoriteTrack;
@@ -86,7 +92,7 @@ public class Album {
 	
 	/**
 	 * 
-	 * @param title
+	 * @param title - setting the title
 	 */
 	public void setTitle(String title) {
 		this.title = title;
@@ -94,14 +100,14 @@ public class Album {
 	
 	/**
 	 * 
-	 * @param genre
+	 * @param genre - setting the genre 
 	 */
 	public void setGenre(String genre) {
 		this.genre = genre;
 	}
 
 	/**
-	 * 
+	 * This is the toString method that will return title, artist and genre
 	 */
 	public String toString() {
 		return title+ "," +artist+ ","+genre ;

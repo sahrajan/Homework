@@ -1,5 +1,5 @@
 /**
- * 
+ * This class is main class
  * @author Rajan Sah
  * @version 3.0
  * @Date 05/05/2022
@@ -10,7 +10,12 @@ import java.util.*;
 public class MusicCollection {
 
 	/**
-	 * 
+	 * This is the main method of class. 
+	 * created scanner for user input and also creating 3 songs and 3 albums.
+	 * Printing the title of album and letting user to select the album options that they want 
+	 * then the code will printing the title artist and genre as per the user request and 
+	 * then it will go to albumOptions.
+	 * when the user select 0 the code will terminate.
 	 * @param args
 	 */
 	public static void main(String[] args) {
@@ -63,7 +68,10 @@ public class MusicCollection {
 	
 	
 	/**
-	 * 
+	 * This is the another method in the main class 
+	 * after executing the first method that is in the main class then 
+	 * code will run this method until user select 0 to return.
+	 * This code will get favoriteTrack and user can modify the genre.
 	 * @param album
 	 */
 	public static void albumOptions(Album album) {
