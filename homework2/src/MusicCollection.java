@@ -1,9 +1,18 @@
-
+/**
+ * 
+ * @author Rajan Sah
+ * @version 3.0
+ * @Date 05/05/2022
+ *
+ */
 import java.util.*;
 
 public class MusicCollection {
 
-
+	/**
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
@@ -53,16 +62,19 @@ public class MusicCollection {
 	}
 	
 	
-	
+	/**
+	 * 
+	 * @param album
+	 */
 	public static void albumOptions(Album album) {
 		
-		int albm = 0;
+		int albm = 1;
 		Scanner input1 = new Scanner(System.in);
 		
 	//	System.out.println(album.toString());
 	 //   System.out.println(album.getGenre());
 		
-		
+		while(albm!=0) {
 		System.out.println("\nAlbum Options: ");
 		System.out.println("[1] Get Favorite Track: ");
 		System.out.println("[2] Change Genre (Enter Genre to change): ");
@@ -87,8 +99,8 @@ public class MusicCollection {
 			System.out.println("\nNew Genre: "+ album.getGenre());
 		}
 		
-		
+		}
 	}
-	}
+}
 
 	
